@@ -29,7 +29,6 @@ public class RLAgent : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        
     }
 
     public override void Heuristic(float[] actionsOut)
@@ -42,5 +41,19 @@ public class RLAgent : Agent
     {
         _rigidbody.AddForce(transform.forward * actionBuffers[0] * _speed);
         _rigidbody.AddTorque(Vector3.up * actionBuffers[1] * _turningSpeed);
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Checkpoint"))
+        {
+            AddReward(1);
+        }
+    }
+
+    public void OnCollisionEnter(Collision other)
+    {
+        AddReward(-1);
+        EndEpisode();
     }
 }
