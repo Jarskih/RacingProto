@@ -1,11 +1,256 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85a228d5-46b6-47e8-a0d4-3b3df545b2c8" name="Default Changelist" comment="" />
+    <list default="true" id="85a228d5-46b6-47e8-a0d4-3b3df545b2c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/Textures/checkers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/Textures/checkers.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/Textures/net.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/Textures/net.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/Textures/tankco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/Textures/tankco.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/bannerTowerGreen.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/bannerTowerGreen.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/bannerTowerRed.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/bannerTowerRed.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/barrierRed.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/barrierRed.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/barrierWall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/barrierWall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/barrierWhite.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/barrierWhite.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/billboard.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/billboard.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/billboardDouble_exclusive.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/billboardDouble_exclusive.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/billboardLow.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/billboardLow.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/billboardLower.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/billboardLower.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/camera_exclusive.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/camera_exclusive.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/fenceCurved.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/fenceCurved.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/fenceStraight.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/fenceStraight.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/flagCheckers.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/flagCheckers.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/flagCheckersSmall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/flagCheckersSmall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/flagGreen.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/flagGreen.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/flagRed.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/flagRed.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/flagTankco.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/flagTankco.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/grandStand.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/grandStand.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/grandStandAwning.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/grandStandAwning.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/grandStandCovered.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/grandStandCovered.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/grandStandCoveredRound.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/grandStandCoveredRound.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/grandStandRound.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/grandStandRound.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/grass.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/grass.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/lightColored.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/lightColored.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/lightPostLarge.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/lightPostLarge.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/lightPostModern.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/lightPostModern.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/lightPost_exclusive.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/lightPost_exclusive.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/lightRed.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/lightRed.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/lightRedDouble.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/lightRedDouble.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/overhead.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/overhead.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/overheadLights.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/overheadLights.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/overheadRound.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/overheadRound.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/overheadRoundColored.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/overheadRoundColored.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/pitsGarage.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/pitsGarage.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/pitsGarageClosed.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/pitsGarageClosed.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/pitsGarageCorner.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/pitsGarageCorner.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/pitsOffice.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/pitsOffice.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/pitsOfficeCorner.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/pitsOfficeCorner.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/pitsOfficeRoof.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/pitsOfficeRoof.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/pylon.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/pylon.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/raceCarGreen.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/raceCarGreen.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/raceCarOrange.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/raceCarOrange.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/raceCarRed.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/raceCarRed.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/raceCarWhite.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/raceCarWhite.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/radarEquipment.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/radarEquipment.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/rail.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/rail.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/railDouble.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/railDouble.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/ramp.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/ramp.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadBump.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadBump.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerBridgeLarge.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerBridgeLarge.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerBridgeLarger.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerBridgeLarger.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerBridgeSmall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerBridgeSmall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLarge.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLarge.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargeBorder.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargeBorder.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargeBorderInner.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargeBorderInner.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargeSand.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargeSand.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargeSandInner.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargeSandInner.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargeWall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargeWall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargeWallInner.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargeWallInner.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLarger.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLarger.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargerBorder.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargerBorder.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargerBorderInner.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargerBorderInner.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargerSand.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargerSand.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargerSandInner.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargerSandInner.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargerWall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargerWall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargerWallInner.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerLargerWallInner.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerSmall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerSmall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerSmallBorder.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerSmallBorder.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerSmallSand.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerSmallSand.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerSmallSquare.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerSmallSquare.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerSmallWall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCornerSmallWall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCrossing.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCrossing.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCurved.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCurved.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCurvedSplit.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadCurvedSplit.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadEnd.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadEnd.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadPitEntry.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadPitEntry.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadPitGarage.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadPitGarage.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadPitStraight.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadPitStraight.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadPitStraightLong.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadPitStraightLong.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadRamp.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadRamp.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadRampLong.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadRampLong.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadRampLongCurved.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadRampLongCurved.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadRampLongCurvedWall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadRampLongCurvedWall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadRampLongWall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadRampLongWall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadRampWall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadRampWall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadSide.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadSide.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadSplit.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadSplit.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadSplitLarge.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadSplitLarge.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadSplitLarger.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadSplitLarger.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadSplitRound.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadSplitRound.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadSplitRoundLarge.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadSplitRoundLarge.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadSplitSmall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadSplitSmall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStart.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStart.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStartPositions.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStartPositions.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraight.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraight.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightArrow.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightArrow.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightBridge.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightBridge.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightBridgeMid.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightBridgeMid.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightBridgeStart.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightBridgeStart.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightLong.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightLong.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightLongBump.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightLongBump.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightLongBumpRound.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightLongBumpRound.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightLongMid.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightLongMid.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightSkew.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/roadStraightSkew.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/tent.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/tent.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/tentClosed.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/tentClosed.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/tentClosedLong.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/tentClosedLong.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/tentLong.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/tentLong.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/tentRoof.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/tentRoof.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/tentRoofDouble.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/tentRoofDouble.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/treeLarge.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/treeLarge.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/treeSmall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rdParty/RacingKit/Models/FBX format/treeSmall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ML-Agents/Timers/SampleScene_timers.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ML-Agents/Timers/SampleScene_timers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/roadPitStraightLong.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/roadPitStraightLong.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RLAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RLAgent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ml-agents@1.0.7/Runtime/Agent.cs" root0="SKIP_HIGHLIGHTING" />
@@ -58,7 +303,8 @@
       <option name="presentableId" value="Default" />
       <updated>1617715631729</updated>
       <workItem from="1617715640649" duration="1932000" />
-      <workItem from="1617718470007" duration="1827000" />
+      <workItem from="1617718470007" duration="2474000" />
+      <workItem from="1617721803059" duration="5753000" />
     </task>
     <servers />
   </component>
