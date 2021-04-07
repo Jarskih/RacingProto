@@ -10,6 +10,10 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="CheckCollision.cs" t="Include" />
+          <e p="Checkpoint.cs" t="Include" />
+          <e p="CheckpointCollection.cs" t="Include" />
+          <e p="Checkpoints.cs" t="Include" />
           <e p="RLAgent.cs" t="Include" />
         </e>
       </e>
