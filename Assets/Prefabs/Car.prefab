@@ -150,9 +150,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4311466696662541113}
   - component: {fileID: 4311466696662541115}
-  - component: {fileID: 4311466696662541112}
   - component: {fileID: 943471141}
   - component: {fileID: 1968044007177646152}
+  - component: {fileID: 3322102370807104873}
   m_Layer: 9
   m_Name: Car
   m_TagString: Untagged
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 9
+    VectorObservationSize: 2
     NumStackedVectorObservations: 1
     VectorActionSize: 02000000
     VectorActionDescriptions: []
@@ -202,30 +202,6 @@ MonoBehaviour:
   m_BehaviorName: Racing
   TeamId: 0
   m_UseChildSensors: 1
---- !u!114 &4311466696662541112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4311466696662541118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39f9987d195339e4b948628ae435ec13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agentParameters:
-    maxStep: 0
-  hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
-  _localStartingPosition: {x: 0, y: 0, z: 0}
-  _startingRotation: {x: 0, y: 0, z: 0, w: 0}
-  _ballStartingPosition: {x: 0, y: 0, z: 0}
-  _speed: 20
-  _turningSpeed: 10
-  _maxVelocity: 100
-  _gravityForce: 10
-  _timeLeftBeforeRestart: 0
 --- !u!114 &943471141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,6 +231,30 @@ MonoBehaviour:
   _nextCheckpoint: {fileID: 0}
   _checkpoints: []
   _currentIndex: 0
+--- !u!114 &3322102370807104873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4311466696662541118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b9b84c0550aa8a44acc3f0161c721ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  _speed: 20
+  _turningSpeed: 10
+  _maxVelocity: 1
+  _gravityForce: 10
+  _rightDirectionReward: 0.0001
+  _speedReward: 0.0001
+  _penaltyPerTick: -0.0001
+  _timeLeftBeforeRestart: 0
 --- !u!1 &4311466697011877017
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,7 +363,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4675504469993766250}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -776,6 +776,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8625199433571214316}
+  - component: {fileID: 700714474}
   m_Layer: 9
   m_Name: raceCarRed
   m_TagString: Untagged
@@ -802,3 +803,16 @@ Transform:
   m_Father: {fileID: 4311466696662541113}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!65 &700714474
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9005243787678185814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.5, z: 1}
+  m_Center: {x: 0, y: 0.25, z: 0}

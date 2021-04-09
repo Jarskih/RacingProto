@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.MLAgents;
+﻿using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using UnityEngine;
-using UnityEngine.Networking;
+using Quaternion = UnityEngine.Quaternion;
+using Vector3 = UnityEngine.Vector3;
 
-public class RLAgent : Agent
+public class RLAgent_1 : Agent
 {
     Vector3 _localStartingPosition;
     private Quaternion _startingRotation;
@@ -15,11 +14,6 @@ public class RLAgent : Agent
     [SerializeField] private float _turningSpeed = 1;
     [SerializeField] private float _maxVelocity = 1;
     [SerializeField] private float _gravityForce = 10;
-
-    [Header("Rewards")] 
-    [SerializeField] private float _rightDirectionReward = 0.1f;
-    [SerializeField] private float _speedReward = 0.1f;
-    [SerializeField] private float _penaltyPerTick = -0.0001f;
     
     private Checkpoints _checkpoints;
     private float _turningInput;
@@ -32,7 +26,7 @@ public class RLAgent : Agent
     public override void Initialize()
     {
         _ballRigidbody = GetComponentInChildren<Rigidbody>();
-        _ballRigidbody.GetComponent<CheckCollision>().SetAgent(this);
+       // _ballRigidbody.GetComponent<CheckCollision>().SetAgent(this);
         _ballRigidbody.transform.SetParent(null);
         _checkpoints = GetComponent<Checkpoints>();
         _timeLeftBeforeRestart = _timeBetweenCheckpoints;
@@ -59,6 +53,8 @@ public class RLAgent : Agent
             EndEpisode();
             return;
         }
+
+
     }
 
     private void FixedUpdate()
@@ -72,7 +68,7 @@ public class RLAgent : Agent
             _ballRigidbody.AddForce(transform.forward * _moveInput * _speed);
         }
         
-        //_ballRigidbody.AddForce(-Vector3.up * _gravityForce);
+        _ballRigidbody.AddForce(-Vector3.up * _gravityForce);
     }
 
     public override void OnEpisodeBegin()
@@ -89,11 +85,21 @@ public class RLAgent : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        var nextCheckPointDir = (_checkpoints.NextCheckpointPosition - transform.position).normalized;
-        var facing = Vector3.Dot(nextCheckPointDir, _ballRigidbody.velocity.normalized);
-        sensor.AddObservation(facing);
-        var speed = _ballRigidbody.velocity.magnitude / _maxVelocity;
-        sensor.AddObservation(speed);
+        Vector3 velocity = _ballRigidbody.velocity;
+        float normalizedX = velocity.x / _maxVelocity; // [0,1]
+        float normalizedZ = velocity.z / _maxVelocity; // [0,1]
+        Vector3 normalizedRotation = transform.localRotation.eulerAngles / 360.0f;  // [0,1]
+        Vector3 distanceToNextCheckpoint = transform.position - _checkpoints.NextCheckpointPosition;
+        Vector3 normalizedDistanceToCheckPoint = distanceToNextCheckpoint / _maxDistanceToWaypoint;
+        
+        //sensor.AddObservation(normalizedX);
+        //sensor.AddObservation(normalizedZ);
+        //sensor.AddObservation(normalizedRotation);
+        sensor.AddObservation(transform.forward);
+        sensor.AddObservation(normalizedDistanceToCheckPoint);
+        sensor.AddObservation(distanceToNextCheckpoint.normalized);
+        
+        AddReward(-0.0001f);
     }
 
     public override void Heuristic(float[] actionsOut)
@@ -107,13 +113,6 @@ public class RLAgent : Agent
         _moveInput = actionBuffers[0];
         _moveInput = Mathf.Clamp01(_moveInput); // [0,1]
         _turningInput = _turningSpeed * actionBuffers[1]; // [-1,1]
-        
-        var nextCheckPointDir = (_checkpoints.NextCheckpointPosition - transform.position).normalized;
-        var facing = Vector3.Dot(nextCheckPointDir, _ballRigidbody.velocity.normalized);
-        var speed = _ballRigidbody.velocity.magnitude / _maxVelocity;
-        AddReward(facing * _rightDirectionReward);
-        AddReward(speed * _speedReward);
-        AddReward(_penaltyPerTick);
     }
 
     public void OnCollisionEnter(Collision other)
@@ -125,8 +124,8 @@ public class RLAgent : Agent
     {
         if (other.gameObject.CompareTag("Wall"))
         {
-            AddReward(-1f);
-            EndEpisode();
+           // Debug.Log("Wall");
+           // EndEpisode();
         }
     }
 

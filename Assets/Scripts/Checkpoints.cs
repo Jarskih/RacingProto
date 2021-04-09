@@ -36,7 +36,7 @@ public class Checkpoints : MonoBehaviour
             }
             else
             {
-                _agent.AddReward(1.0f/_checkpoints.Count);
+                _agent.AddReward(0.5f);
                 _nextCheckpoint = _checkpoints[_currentIndex];
             }
             return true;

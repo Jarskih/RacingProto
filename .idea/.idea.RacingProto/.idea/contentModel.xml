@@ -15,6 +15,7 @@
           <e p="CheckpointCollection.cs" t="Include" />
           <e p="Checkpoints.cs" t="Include" />
           <e p="RLAgent.cs" t="Include" />
+          <e p="RLAgent_1.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
