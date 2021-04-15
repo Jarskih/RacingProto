@@ -193,9 +193,9 @@ MonoBehaviour:
   m_BrainParameters:
     VectorObservationSize: 2
     NumStackedVectorObservations: 1
-    VectorActionSize: 02000000
+    VectorActionSize: 0300000002000000
     VectorActionDescriptions: []
-    VectorActionSpaceType: 1
+    VectorActionSpaceType: 0
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
   m_BehaviorType: 0
@@ -247,9 +247,9 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  _speed: 20
-  _turningSpeed: 10
-  _maxVelocity: 1
+  _acceleration: 50
+  _turningSpeed: 100
+  _maxVelocity: 10
   _gravityForce: 10
   _rightDirectionReward: 0.0001
   _speedReward: 0.0001
