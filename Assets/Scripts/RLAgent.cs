@@ -10,10 +10,9 @@ public class RLAgent : Agent
     private Quaternion _startingRotation;
     private Vector3 _ballStartingPosition;
     private Rigidbody _ballRigidbody;
-    [SerializeField] private float _acceleration = 1;
-    [SerializeField] private float _turningSpeed = 1;
-    [SerializeField] private float _maxVelocity = 1;
-    [SerializeField] private float _gravityForce = 10;
+    private float _acceleration = 50;
+    private float _turningSpeed = 100;
+    private float _maxMagnitudeVelocity = 10;
 
     [Header("Rewards")] 
     [SerializeField] private float _rightDirectionReward = 0.1f;
@@ -31,7 +30,7 @@ public class RLAgent : Agent
     {
         _ballRigidbody = GetComponentInChildren<Rigidbody>();
         _ballRigidbody.GetComponent<CheckCollision>().SetAgent(this);
-        _ballRigidbody.transform.SetParent(null);
+        _ballRigidbody.transform.SetParent(transform.parent);
         _checkpoints = GetComponent<Checkpoints>();
         _timeLeftBeforeRestart = _timeBetweenCheckpoints;
         _localStartingPosition = transform.localPosition;
@@ -65,7 +64,7 @@ public class RLAgent : Agent
         var newVelocity = transform.forward * magnitude;
         _ballRigidbody.velocity = newVelocity;
 
-        if (_ballRigidbody.velocity.magnitude < _maxVelocity)
+        if (_ballRigidbody.velocity.magnitude < _maxMagnitudeVelocity)
         {
             _ballRigidbody.AddForce(transform.forward * _moveInput * _acceleration);
         }
@@ -90,7 +89,7 @@ public class RLAgent : Agent
         var nextCheckPointDir = (_checkpoints.NextCheckpointPosition - transform.position).normalized;
         var facing = Vector3.Dot(nextCheckPointDir, _ballRigidbody.velocity.normalized);
         sensor.AddObservation(facing);
-        var speed = _ballRigidbody.velocity.magnitude / _maxVelocity;
+        var speed = _ballRigidbody.velocity.magnitude / _maxMagnitudeVelocity;
         sensor.AddObservation(speed);
     }
 
@@ -135,7 +134,7 @@ public class RLAgent : Agent
 
         var nextCheckPointDir = (_checkpoints.NextCheckpointPosition - transform.position).normalized;
         var facing = Vector3.Dot(nextCheckPointDir, _ballRigidbody.velocity.normalized);
-        var speed = _ballRigidbody.velocity.magnitude / _maxVelocity;
+        var speed = _ballRigidbody.velocity.magnitude / _maxMagnitudeVelocity;
         AddReward(facing * _rightDirectionReward);
         AddReward(speed * _speedReward);
         AddReward(_penaltyPerTick);

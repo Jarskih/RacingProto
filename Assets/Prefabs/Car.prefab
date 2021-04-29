@@ -228,6 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67069be26d54544b8b8c2d01dccd53f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _tag: Track1
   _nextCheckpoint: {fileID: 0}
   _checkpoints: []
   _currentIndex: 0
@@ -247,10 +248,6 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  _acceleration: 50
-  _turningSpeed: 100
-  _maxVelocity: 10
-  _gravityForce: 10
   _rightDirectionReward: 0.0001
   _speedReward: 0.0001
   _penaltyPerTick: -0.0001

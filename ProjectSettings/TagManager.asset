@@ -7,6 +7,8 @@ TagManager:
   - Wall
   - Checkpoint
   - Goal
+  - Track1
+  - Track2
   layers:
   - Default
   - TransparentFX
