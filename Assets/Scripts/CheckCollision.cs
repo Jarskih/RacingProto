@@ -7,11 +7,13 @@ public class CheckCollision : MonoBehaviour
 {
     private RLAgent _agent;
     private RLAgentSparse _gailAgent;
-    
+    private TaxiAgent _taxi;
+
     public void OnCollisionEnter(Collision other)
     {
         _agent?.OnCollision(other);
         _gailAgent?.OnCollision(other);
+        _taxi?.OnCollision(other.gameObject);
     }
 
     public void SetAgent(RLAgent rlAgent)
@@ -24,6 +26,11 @@ public class CheckCollision : MonoBehaviour
         _gailAgent = gailAgent;
     }
     
+    public void SetAgent(TaxiAgent taxi)
+    {
+        _taxi = taxi;
+    }
+
     public void Trigger(Checkpoint checkpoint)
     {
         _agent?.CheckpointHit(checkpoint);

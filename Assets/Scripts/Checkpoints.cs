@@ -10,7 +10,7 @@ public class Checkpoints : MonoBehaviour
     [SerializeField] private Checkpoint _nextCheckpoint;
     [SerializeField] private List<Checkpoint> _checkpoints;
     [SerializeField] private int _currentIndex;
-    private RLAgentSparse _agent;
+    private RLAgent _agent;
     private static int _timesFinishedTrack = 0;
 
     void Start()
@@ -24,7 +24,11 @@ public class Checkpoints : MonoBehaviour
                 _checkpoints = checkpoint.Checkpoints;
             }
         }
-        _agent = GetComponent<RLAgentSparse>();
+        _agent = GetComponent<RLAgent>();
+        if (_agent == null)
+        {
+            Debug.LogError("Wrong agent type");
+        }
         Reset();
     }
 
@@ -47,12 +51,15 @@ public class Checkpoints : MonoBehaviour
                 _agent.AddReward(1f);
                 Debug.Log("Finished track");
                 _timesFinishedTrack++;
+                var statsRecorder = Academy.Instance.StatsRecorder;
+                statsRecorder.Add("Times finished track", _timesFinishedTrack);
                 _agent.EndEpisode();
             }
             else
             {
                 _agent.AddReward(0.5f);
                 _nextCheckpoint = _checkpoints[_currentIndex];
+                
             }
             return true;
         }

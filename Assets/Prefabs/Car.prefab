@@ -48,7 +48,7 @@ MonoBehaviour:
   - Wall
   - Checkpoint
   m_RaysPerDirection: 2
-  m_MaxRayDegrees: 10
+  m_MaxRayDegrees: 25
   m_SphereCastRadius: 1
   m_RayLength: 30
   m_RayLayerMask:
@@ -269,7 +269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4311466697011877016
 Transform:
   m_ObjectHideFlags: 0

@@ -4,58 +4,47 @@ using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using UnityEngine;
 
-public class RLAgent : Agent
+public class TaxiAgent : Agent
 {
     Vector3 _localStartingPosition;
     private Quaternion _startingRotation;
     private Vector3 _ballStartingPosition;
     private Rigidbody _ballRigidbody;
-    private float _acceleration = 50;
+    private float _acceleration = 700;
     private float _turningSpeed = 100;
-    private float _maxMagnitudeVelocity = 10;
+    private float _maxMagnitudeVelocity = 20;
 
     [Header("Rewards")] 
-    [SerializeField] private float _rightDirectionReward = 0.1f;
-    [SerializeField] private float _speedReward = 0.1f;
-    [SerializeField] private float _penaltyPerTick = -0.0001f;
+    private float _speedReward = 0.0001f;
+    private float _penaltyPerTick = -0.0001f;
     
-    private Checkpoints _checkpoints;
     private float _turningInput;
     private float _moveInput;
-    [SerializeField] private float _timeLeftBeforeRestart = 0;
-    private float _timeBetweenCheckpoints = 30;
+    private ReturnSpot _returnSpot;
+    private Passengers _passengers;
+    private CheckCollision _check;
+    private bool _hasPassenger;
 
 
     public override void Initialize()
     {
+        _check = GetComponentInChildren<CheckCollision>();
+        _check.SetAgent(this);
         _ballRigidbody = GetComponentInChildren<Rigidbody>();
-        _ballRigidbody.GetComponent<CheckCollision>().SetAgent(this);
         _ballRigidbody.transform.SetParent(transform.parent);
-        _checkpoints = GetComponent<Checkpoints>();
-        _timeLeftBeforeRestart = _timeBetweenCheckpoints;
         _localStartingPosition = transform.localPosition;
         _startingRotation = transform.localRotation;
         _ballStartingPosition = _ballRigidbody.transform.localPosition;
+        _returnSpot = FindObjectOfType<ReturnSpot>();
+        _returnSpot.gameObject.SetActive(false);
+        _passengers = GetComponent<Passengers>();
+        _returnSpot.SetAgent(this);
     }
 
     private void Update()
     {
-        _timeLeftBeforeRestart -= Time.deltaTime;
         transform.Rotate(transform.up, _turningSpeed * _turningInput * Time.deltaTime);
         transform.localPosition = _ballRigidbody.transform.localPosition;
-        
-        if (transform.localPosition.y < -1)
-        {
-            EndEpisode();
-            return;
-        }
-
-        if (_timeLeftBeforeRestart < 0)
-        {
-            AddReward(-1f);
-            EndEpisode();
-            return;
-        }
     }
 
     private void FixedUpdate()
@@ -66,9 +55,9 @@ public class RLAgent : Agent
 
         if (_ballRigidbody.velocity.magnitude < _maxMagnitudeVelocity)
         {
-            _ballRigidbody.AddForce(transform.forward * _moveInput * _acceleration);
+            _ballRigidbody.AddForce(transform.forward * _moveInput * _acceleration * Time.deltaTime);
         }
-        
+
         //_ballRigidbody.AddForce(-Vector3.up * _gravityForce);
     }
 
@@ -80,17 +69,17 @@ public class RLAgent : Agent
         _ballRigidbody.transform.localPosition = _ballStartingPosition;
         _ballRigidbody.velocity = Vector3.zero;
         _ballRigidbody.angularVelocity = Vector3.zero;
-        _timeLeftBeforeRestart = _timeBetweenCheckpoints;
-        _checkpoints.Reset();
+        _returnSpot.gameObject.SetActive(false);
+        
+        _passengers.NewPassenger();
+        _hasPassenger = false;
     }
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        var nextCheckPointDir = (_checkpoints.NextCheckpointPosition - transform.position).normalized;
-        var facing = Vector3.Dot(nextCheckPointDir, _ballRigidbody.velocity.normalized);
-        sensor.AddObservation(facing);
         var speed = _ballRigidbody.velocity.magnitude / _maxMagnitudeVelocity;
         sensor.AddObservation(speed);
+        sensor.AddObservation(_hasPassenger);
     }
 
     public override void Heuristic(float[] actionsOut)
@@ -131,34 +120,41 @@ public class RLAgent : Agent
         }
 
         _moveInput = actionBuffers[1]; // [0,1]
-
-        var nextCheckPointDir = (_checkpoints.NextCheckpointPosition - transform.position).normalized;
-        var facing = Vector3.Dot(nextCheckPointDir, _ballRigidbody.velocity.normalized);
+        
+        AddReward(_penaltyPerTick);
+        
         var speed = _ballRigidbody.velocity.magnitude / _maxMagnitudeVelocity;
-        AddReward(facing * _rightDirectionReward);
         AddReward(speed * _speedReward);
         AddReward(_penaltyPerTick);
     }
 
     public void OnCollisionEnter(Collision other)
     {
-        OnCollision(other);
+        OnCollision(other.gameObject);
     }
 
-    public void OnCollision(Collision other)
+    public void OnCollision(GameObject other)
     {
         if (other.gameObject.CompareTag("Wall"))
         {
             AddReward(-1f);
             EndEpisode();
+            return;
+        }
+
+        
+        if (other.gameObject.CompareTag("Checkpoint"))
+        {
+            AddReward(1f);
+            other.gameObject.SetActive(false);
+            _returnSpot.gameObject.SetActive(true);
+            _hasPassenger = true;
         }
     }
 
-    public void CheckpointHit(Checkpoint checkpoint)
+    public void GoalHit()
     {
-        if (_checkpoints.CheckpointHit(checkpoint))
-        {
-            _timeLeftBeforeRestart = _timeBetweenCheckpoints;
-        }
+        AddReward(5f);
+        EndEpisode();
     }
 }

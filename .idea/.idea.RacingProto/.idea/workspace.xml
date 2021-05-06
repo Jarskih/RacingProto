@@ -20,26 +20,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85a228d5-46b6-47e8-a0d4-3b3df545b2c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ML-Agents/Timers/TrainingEnv - Sparse_timers.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ML-Agents/Timers/TrainingEnv - Sparse_timers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1.demo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1.demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_0.demo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_0.demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_1.demo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_1.demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_2.demo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_2.demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_3.demo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_3.demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_4.demo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_4.demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_5.demo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_5.demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_6.demo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_6.demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_7.demo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_7.demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/Nonsparse.demo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/Nonsparse.demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/Nonsparse_0.demo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/Nonsparse_0.demo.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ML-Agents/Timers/TrainingEnv_timers.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ML-Agents/Timers/TrainingEnv_timers.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CarSparse.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CarSparse.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tracks/Track1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tracks/Track1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tracks/Track2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tracks/Track2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tracks/Track2Sparse.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tracks/Track2Sparse.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TrainingEnv - Sparse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TrainingEnv - Sparse.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TrainingEnv.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TrainingEnv.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CheckCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CheckCollision.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Checkpoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Checkpoints.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RLAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RLAgent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RLAgentSparse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RLAgentSparse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
@@ -59,6 +74,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CheckpointCollection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Checkpoints.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ml-agents@1.0.7/Runtime/Sensors/VectorSensor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8D3A4CBA-CDAE-45B3-84E0-E80B376938E1/65/529b41a2/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -70,10 +86,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RLAgent_1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Checkpoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RLAgentGAIL.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CheckCollision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RLAgent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Checkpoints.cs" />
+        <option value="$PROJECT_DIR$/Assets/Passenger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RLAgentSparse.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Passenger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Passengers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ReturnSpot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CheckCollision.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TaxiAgent.cs" />
       </list>
     </option>
   </component>
@@ -142,6 +163,9 @@
       <workItem from="1620211015551" duration="1000" />
       <workItem from="1620214683750" duration="2325000" />
       <workItem from="1620218409144" duration="520000" />
+      <workItem from="1620295203129" duration="2199000" />
+      <workItem from="1620304653047" duration="6002000" />
+      <workItem from="1620313955509" duration="401000" />
     </task>
     <servers />
   </component>
@@ -166,85 +190,85 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="375" key="GridCell.Tab.0.bottom" timestamp="1620210125459">
+    <state width="1877" height="255" key="GridCell.Tab.0.bottom" timestamp="1620311340970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620210125459" />
+    <state width="1877" height="255" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620311340970" />
     <state width="1877" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617746519453" />
-    <state width="1877" height="375" key="GridCell.Tab.0.center" timestamp="1620210125459">
+    <state width="1877" height="255" key="GridCell.Tab.0.center" timestamp="1620311340970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620210125459" />
+    <state width="1877" height="255" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620311340970" />
     <state width="1877" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617746519453" />
-    <state width="1877" height="375" key="GridCell.Tab.0.left" timestamp="1620210125459">
+    <state width="1877" height="255" key="GridCell.Tab.0.left" timestamp="1620311340970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620210125459" />
+    <state width="1877" height="255" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620311340970" />
     <state width="1877" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617746519453" />
-    <state width="1877" height="375" key="GridCell.Tab.0.right" timestamp="1620210125459">
+    <state width="1877" height="255" key="GridCell.Tab.0.right" timestamp="1620311340970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620210125459" />
+    <state width="1877" height="255" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620311340970" />
     <state width="1877" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617746519453" />
-    <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1620210125459">
+    <state width="1877" height="255" key="GridCell.Tab.1.bottom" timestamp="1620311340970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620210125459" />
+    <state width="1877" height="255" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620311340970" />
     <state width="1877" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617746519453" />
-    <state width="1877" height="375" key="GridCell.Tab.1.center" timestamp="1620210125459">
+    <state width="1877" height="255" key="GridCell.Tab.1.center" timestamp="1620311340970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620210125459" />
+    <state width="1877" height="255" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620311340970" />
     <state width="1877" height="375" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617746519453" />
-    <state width="1877" height="375" key="GridCell.Tab.1.left" timestamp="1620210125459">
+    <state width="1877" height="255" key="GridCell.Tab.1.left" timestamp="1620311340970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620210125459" />
+    <state width="1877" height="255" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620311340970" />
     <state width="1877" height="375" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617746519453" />
-    <state width="1877" height="375" key="GridCell.Tab.1.right" timestamp="1620210125459">
+    <state width="1877" height="255" key="GridCell.Tab.1.right" timestamp="1620311340970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620210125459" />
+    <state width="1877" height="255" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620311340970" />
     <state width="1877" height="375" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617746519453" />
-    <state width="1877" height="375" key="GridCell.Tab.2.bottom" timestamp="1620210125459">
+    <state width="1877" height="255" key="GridCell.Tab.2.bottom" timestamp="1620311340970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620210125459" />
+    <state width="1877" height="255" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620311340970" />
     <state width="1877" height="375" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617746519453" />
-    <state width="1877" height="375" key="GridCell.Tab.2.center" timestamp="1620210125459">
+    <state width="1877" height="255" key="GridCell.Tab.2.center" timestamp="1620311340970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620210125459" />
+    <state width="1877" height="255" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620311340970" />
     <state width="1877" height="375" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617746519453" />
-    <state width="1877" height="375" key="GridCell.Tab.2.left" timestamp="1620210125459">
+    <state width="1877" height="255" key="GridCell.Tab.2.left" timestamp="1620311340970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620210125459" />
+    <state width="1877" height="255" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620311340970" />
     <state width="1877" height="375" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617746519453" />
-    <state width="1877" height="375" key="GridCell.Tab.2.right" timestamp="1620210125459">
+    <state width="1877" height="255" key="GridCell.Tab.2.right" timestamp="1620311340970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620210125459" />
+    <state width="1877" height="255" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620311340970" />
     <state width="1877" height="375" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617746519453" />
-    <state width="1877" height="375" key="GridCell.Tab.3.bottom" timestamp="1620210125460">
+    <state width="1877" height="255" key="GridCell.Tab.3.bottom" timestamp="1620311340971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620210125460" />
+    <state width="1877" height="255" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620311340971" />
     <state width="1877" height="375" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617746519454" />
-    <state width="1877" height="375" key="GridCell.Tab.3.center" timestamp="1620210125459">
+    <state width="1877" height="255" key="GridCell.Tab.3.center" timestamp="1620311340971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620210125459" />
+    <state width="1877" height="255" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620311340971" />
     <state width="1877" height="375" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617746519454" />
-    <state width="1877" height="375" key="GridCell.Tab.3.left" timestamp="1620210125459">
+    <state width="1877" height="255" key="GridCell.Tab.3.left" timestamp="1620311340971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620210125459" />
+    <state width="1877" height="255" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620311340971" />
     <state width="1877" height="375" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617746519454" />
-    <state width="1877" height="375" key="GridCell.Tab.3.right" timestamp="1620210125460">
+    <state width="1877" height="255" key="GridCell.Tab.3.right" timestamp="1620311340971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620210125460" />
+    <state width="1877" height="255" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620311340971" />
     <state width="1877" height="375" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617746519454" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1617787761535">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -258,5 +282,24 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1618477140844" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Passenger.cs</url>
+          <line>15</line>
+          <properties documentPath="C:\Unity\RacingProto\Assets\Scripts\Passenger.cs" initialLine="15">
+            <startOffsets>
+              <option value="328" />
+            </startOffsets>
+            <endOffsets>
+              <option value="367" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
