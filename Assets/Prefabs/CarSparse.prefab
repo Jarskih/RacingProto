@@ -611,8 +611,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  _rightDirectionReward: 0.1
-  _speedReward: 0.1
+  _rightDirectionReward: 0.001
+  _speedReward: 0.001
   _penaltyPerTick: -0.0001
 --- !u!1 &6728600737786505427
 GameObject:
@@ -661,10 +661,10 @@ MonoBehaviour:
   m_DetectableTags:
   - Wall
   - Checkpoint
-  m_RaysPerDirection: 2
-  m_MaxRayDegrees: 120
+  m_RaysPerDirection: 3
+  m_MaxRayDegrees: 90
   m_SphereCastRadius: 1
-  m_RayLength: 30
+  m_RayLength: 15
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 1280
@@ -721,9 +721,9 @@ MonoBehaviour:
   - Wall
   - Checkpoint
   m_RaysPerDirection: 1
-  m_MaxRayDegrees: 3.2
+  m_MaxRayDegrees: 5
   m_SphereCastRadius: 0.5
-  m_RayLength: 100
+  m_RayLength: 30
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 1280

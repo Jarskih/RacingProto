@@ -28,6 +28,7 @@ public class RLAgent : Agent
 
     public override void Initialize()
     {
+        Time.timeScale = 1;
         _ballRigidbody = GetComponentInChildren<Rigidbody>();
         _ballRigidbody.GetComponent<CheckCollision>().SetAgent(this);
         _ballRigidbody.transform.SetParent(transform.parent);

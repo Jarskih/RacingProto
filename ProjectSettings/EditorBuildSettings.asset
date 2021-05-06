@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TrainingEnv.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/TrainingEnv - Sparse.unity
+    guid: 2dc6d3ebdb66fdb49b757def1eb08f5a
   m_configObjects: {}

@@ -24,7 +24,6 @@
       <Path>Library</Path>
       <Path>Logs</Path>
       <Path>Notes</Path>
-      <Path>Temp</Path>
       <Path>UserSettings</Path>
       <Path>ml-agents</Path>
       <Path>obj</Path>

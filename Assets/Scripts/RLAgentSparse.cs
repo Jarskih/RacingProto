@@ -15,9 +15,9 @@ public class RLAgentSparse : Agent
     private float _maxMagnitudeVelocity = 10;
 
     [Header("Rewards")] 
-    [SerializeField] private float _rightDirectionReward = 0.1f;
-    [SerializeField] private float _speedReward = 0.1f;
-    [SerializeField] private float _penaltyPerTick = -0.0001f;
+    [SerializeField] private float _rightDirectionReward = 0.0001f;
+    [SerializeField] private float _speedReward = 0.0001f;
+    [SerializeField] private float _penaltyPerTick = -0.001f;
     
     private Checkpoints _checkpoints;
     private float _turningInput;
@@ -123,7 +123,7 @@ public class RLAgentSparse : Agent
         var nextCheckPointDir = (_checkpoints.NextCheckpointPosition - transform.position).normalized;
         var facing = Vector3.Dot(nextCheckPointDir, _ballRigidbody.velocity.normalized);
         var speed = _ballRigidbody.velocity.magnitude / _maxMagnitudeVelocity;
-        //AddReward(facing * _rightDirectionReward);
+        // AddReward(facing * _rightDirectionReward);
         AddReward(speed * _speedReward);
         // AddReward(_penaltyPerTick);
     }
