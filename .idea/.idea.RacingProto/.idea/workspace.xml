@@ -20,43 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85a228d5-46b6-47e8-a0d4-3b3df545b2c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1.demo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1.demo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_0.demo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_0.demo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_1.demo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_1.demo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_2.demo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_2.demo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_3.demo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_3.demo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_4.demo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_4.demo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_5.demo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_5.demo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_6.demo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_6.demo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_7.demo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/GAILtrack1_7.demo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/Nonsparse.demo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/Nonsparse.demo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/Nonsparse_0.demo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demonstrations/Nonsparse_0.demo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ML-Agents/Timers/TrainingEnv_timers.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ML-Agents/Timers/TrainingEnv_timers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tracks/Track1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tracks/Track1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tracks/Track2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tracks/Track2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TrainingEnv.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TrainingEnv.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CheckCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CheckCollision.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Checkpoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Checkpoints.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RLAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RLAgent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ML-Agents/Timers/TrainingEnv - City_timers.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ML-Agents/Timers/TrainingEnv - City_timers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/PPO_city_08.nn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/PPO_city_08.nn.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tracks/City.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tracks/City.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TrainingEnv - City.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TrainingEnv - City.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TaxiAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TaxiAgent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe8.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe9.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +152,10 @@
       <workItem from="1620218409144" duration="520000" />
       <workItem from="1620295203129" duration="2199000" />
       <workItem from="1620304653047" duration="6002000" />
-      <workItem from="1620313955509" duration="401000" />
+      <workItem from="1620313955509" duration="1172000" />
+      <workItem from="1620316133221" duration="790000" />
+      <workItem from="1620326566572" duration="829000" />
+      <workItem from="1620338632226" duration="225000" />
     </task>
     <servers />
   </component>

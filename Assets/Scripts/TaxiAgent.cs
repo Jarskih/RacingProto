@@ -10,12 +10,12 @@ public class TaxiAgent : Agent
     private Quaternion _startingRotation;
     private Vector3 _ballStartingPosition;
     private Rigidbody _ballRigidbody;
-    private float _acceleration = 700;
+    private float _acceleration = 50;
     private float _turningSpeed = 100;
     private float _maxMagnitudeVelocity = 20;
 
     [Header("Rewards")] 
-    private float _speedReward = 0.0001f;
+    private float _speedReward = 0.001f;
     private float _penaltyPerTick = -0.0001f;
     
     private float _turningInput;
@@ -55,7 +55,7 @@ public class TaxiAgent : Agent
 
         if (_ballRigidbody.velocity.magnitude < _maxMagnitudeVelocity)
         {
-            _ballRigidbody.AddForce(transform.forward * _moveInput * _acceleration * Time.deltaTime);
+            _ballRigidbody.AddForce(transform.forward * _moveInput * _acceleration);
         }
 
         //_ballRigidbody.AddForce(-Vector3.up * _gravityForce);
@@ -120,9 +120,7 @@ public class TaxiAgent : Agent
         }
 
         _moveInput = actionBuffers[1]; // [0,1]
-        
-        AddReward(_penaltyPerTick);
-        
+
         var speed = _ballRigidbody.velocity.magnitude / _maxMagnitudeVelocity;
         AddReward(speed * _speedReward);
         AddReward(_penaltyPerTick);
@@ -141,11 +139,10 @@ public class TaxiAgent : Agent
             EndEpisode();
             return;
         }
-
         
         if (other.gameObject.CompareTag("Checkpoint"))
         {
-            AddReward(1f);
+            AddReward(0.2f);
             other.gameObject.SetActive(false);
             _returnSpot.gameObject.SetActive(true);
             _hasPassenger = true;
@@ -154,7 +151,7 @@ public class TaxiAgent : Agent
 
     public void GoalHit()
     {
-        AddReward(5f);
+        AddReward(1f);
         EndEpisode();
     }
 }
