@@ -20,30 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85a228d5-46b6-47e8-a0d4-3b3df545b2c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RacingProto/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ML-Agents/Timers/TrainingEnv - City_timers.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ML-Agents/Timers/TrainingEnv - City_timers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/PPO_city_08.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/PPO_city_08.nn.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/PPO_city_13.nn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/PPO_city_13.nn.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/PPO_city_19.nn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/PPO_city_19.nn.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/PPO_city_20.nn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/PPO_city_20.nn.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tracks/City.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tracks/City.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TrainingEnv - City.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TrainingEnv - City.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Passengers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Passengers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RLAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RLAgent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RLAgentSparse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RLAgentSparse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RLAgent_1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RLAgent_1.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TaxiAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TaxiAgent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,12 +53,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RLAgentSparse.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ml-agents@1.0.7/Runtime/Agent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ml-agents@2.0.0-exp.1/Runtime/Agent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ml-agents@2.0.0-exp.1/Runtime/StatsRecorder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CheckCollision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/6c/724db3de/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CheckpointCollection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Checkpoints.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ml-agents@1.0.7/Runtime/Sensors/VectorSensor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D2D826EB-8F84-4539-97B3-ABADE86F9EE8/cb/05af0681/StatAggregationMethod.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8D3A4CBA-CDAE-45B3-84E0-E80B376938E1/65/529b41a2/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -73,14 +72,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RLAgent_1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Checkpoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RLAgentGAIL.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RLAgent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Checkpoints.cs" />
         <option value="$PROJECT_DIR$/Assets/Passenger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RLAgentSparse.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Passenger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Passengers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ReturnSpot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CheckCollision.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Passengers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RLAgent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RLAgentSparse.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TaxiAgent.cs" />
       </list>
     </option>
@@ -156,6 +155,14 @@
       <workItem from="1620316133221" duration="790000" />
       <workItem from="1620326566572" duration="829000" />
       <workItem from="1620338632226" duration="225000" />
+      <workItem from="1620390824226" duration="861000" />
+      <workItem from="1620396080504" duration="1956000" />
+      <workItem from="1620402552004" duration="15000" />
+      <workItem from="1620402591051" duration="1127000" />
+      <workItem from="1620410792727" duration="624000" />
+      <workItem from="1620486193787" duration="1899000" />
+      <workItem from="1620491606171" duration="463000" />
+      <workItem from="1620495748696" duration="22000" />
     </task>
     <servers />
   </component>
@@ -272,24 +279,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1618477140844" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Passenger.cs</url>
-          <line>15</line>
-          <properties documentPath="C:\Unity\RacingProto\Assets\Scripts\Passenger.cs" initialLine="15">
-            <startOffsets>
-              <option value="328" />
-            </startOffsets>
-            <endOffsets>
-              <option value="367" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

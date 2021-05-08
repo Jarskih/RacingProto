@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.MLAgents;
+using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 using UnityEngine;
 
@@ -35,19 +36,7 @@ public class RLAgentSparse : Agent
         _ballStartingPosition = _ballRigidbody.transform.localPosition;
     }
 
-    private void Update()
-    {
-        transform.Rotate(transform.up, _turningSpeed * _turningInput * Time.deltaTime);
-        transform.localPosition = _ballRigidbody.transform.localPosition;
-        
-        if (transform.localPosition.y < -1)
-        {
-            EndEpisode();
-            return;
-        }
-    }
-
-    private void FixedUpdate()
+    private void Move()
     {
         var magnitude = _ballRigidbody.velocity.magnitude;
         var newVelocity = transform.forward * magnitude;
@@ -58,7 +47,14 @@ public class RLAgentSparse : Agent
             _ballRigidbody.AddForce(transform.forward * _moveInput * _acceleration);
         }
         
-        //_ballRigidbody.AddForce(-Vector3.up * _gravityForce);
+        transform.Rotate(transform.up, _turningSpeed * _turningInput * Time.deltaTime);
+        transform.localPosition = _ballRigidbody.transform.localPosition;
+        
+        if (transform.localPosition.y < -1)
+        {
+            EndEpisode();
+            return;
+        }
     }
 
     public override void OnEpisodeBegin()
@@ -81,30 +77,31 @@ public class RLAgentSparse : Agent
         sensor.AddObservation(speed);
     }
 
-    public override void Heuristic(float[] actionsOut)
+    public override void Heuristic(in ActionBuffers actionsOut)
     {
-        actionsOut[0] = 0;
+        var discreteActionsOut = actionsOut.DiscreteActions;
+        discreteActionsOut[0] = 0;
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            actionsOut[0] = 1;
+            discreteActionsOut[0] = 1;
         }
         else if(Input.GetKey(KeyCode.RightArrow))
         {
-            actionsOut[0] = 2;
+            discreteActionsOut[0] = 2;
         }
         
-        actionsOut[1] = 0;
+        discreteActionsOut[1] = 0;
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            actionsOut[1] = 1;
+            discreteActionsOut[1] = 1;
         }
         
     }
 
-    public override void OnActionReceived(float[] actionBuffers)
+    public override void OnActionReceived(ActionBuffers actionBuffers)
     {
-        var turning = actionBuffers[0]; // [0,1,2]
+        var turning = actionBuffers.DiscreteActions[0]; // [0,1,2]
         switch (turning)
         {
             case 0:
@@ -118,7 +115,7 @@ public class RLAgentSparse : Agent
                 break;
         }
 
-        _moveInput = actionBuffers[1]; // [0,1]
+        _moveInput = actionBuffers.DiscreteActions[1]; // [0,1]
 
         var nextCheckPointDir = (_checkpoints.NextCheckpointPosition - transform.position).normalized;
         var facing = Vector3.Dot(nextCheckPointDir, _ballRigidbody.velocity.normalized);
@@ -126,6 +123,8 @@ public class RLAgentSparse : Agent
         // AddReward(facing * _rightDirectionReward);
         AddReward(speed * _speedReward);
         // AddReward(_penaltyPerTick);
+        
+        Move();
     }
 
     public void OnCollisionEnter(Collision other)

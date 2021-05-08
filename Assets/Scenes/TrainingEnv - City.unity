@@ -290,7 +290,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &847669606
 AudioListener:
   m_ObjectHideFlags: 0
@@ -349,8 +349,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847669605}
-  m_LocalRotation: {x: 0.56053, y: -0, z: -0, w: 0.8281342}
-  m_LocalPosition: {x: -2, y: 105, z: -57.5}
+  m_LocalRotation: {x: 0.3671342, y: 0.36917844, z: -0.16174737, w: 0.8383064}
+  m_LocalPosition: {x: -40.21226, y: 73.39085, z: -165.90501}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -366,7 +366,7 @@ PrefabInstance:
     - target: {fileID: 527403505927034699, guid: bbddcf2035efa1044b7eed11f70c7045, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3fff606d9744644418cd49554ee6dabb, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: f91649276aa66934a920793e3f922f62, type: 3}
     - target: {fileID: 4792824257420671102, guid: bbddcf2035efa1044b7eed11f70c7045, type: 3}
       propertyPath: m_Name
       value: City
@@ -417,7 +417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6604570148811882913, guid: bbddcf2035efa1044b7eed11f70c7045, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbddcf2035efa1044b7eed11f70c7045, type: 3}

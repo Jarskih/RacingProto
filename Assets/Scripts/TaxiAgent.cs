@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using Unity.MLAgents;
+using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 using UnityEngine;
 
@@ -10,13 +9,12 @@ public class TaxiAgent : Agent
     private Quaternion _startingRotation;
     private Vector3 _ballStartingPosition;
     private Rigidbody _ballRigidbody;
-    private float _acceleration = 50;
+    float _acceleration = 0.5f;
     private float _turningSpeed = 100;
-    private float _maxMagnitudeVelocity = 20;
+    float _maxMagnitudeVelocity = 300;
 
-    [Header("Rewards")] 
-    private float _speedReward = 0.001f;
-    private float _penaltyPerTick = -0.0001f;
+    [Header("Rewards")]
+    private float _penalty = -1;
     
     private float _turningInput;
     private float _moveInput;
@@ -36,29 +34,10 @@ public class TaxiAgent : Agent
         _startingRotation = transform.localRotation;
         _ballStartingPosition = _ballRigidbody.transform.localPosition;
         _returnSpot = FindObjectOfType<ReturnSpot>();
-        _returnSpot.gameObject.SetActive(false);
         _passengers = GetComponent<Passengers>();
         _returnSpot.SetAgent(this);
-    }
-
-    private void Update()
-    {
-        transform.Rotate(transform.up, _turningSpeed * _turningInput * Time.deltaTime);
-        transform.localPosition = _ballRigidbody.transform.localPosition;
-    }
-
-    private void FixedUpdate()
-    {
-        var magnitude = _ballRigidbody.velocity.magnitude;
-        var newVelocity = transform.forward * magnitude;
-        _ballRigidbody.velocity = newVelocity;
-
-        if (_ballRigidbody.velocity.magnitude < _maxMagnitudeVelocity)
-        {
-            _ballRigidbody.AddForce(transform.forward * _moveInput * _acceleration);
-        }
-
-        //_ballRigidbody.AddForce(-Vector3.up * _gravityForce);
+        _passengers.Init();
+        _passengers.NewPassenger();
     }
 
     public override void OnEpisodeBegin()
@@ -69,47 +48,47 @@ public class TaxiAgent : Agent
         _ballRigidbody.transform.localPosition = _ballStartingPosition;
         _ballRigidbody.velocity = Vector3.zero;
         _ballRigidbody.angularVelocity = Vector3.zero;
-        _returnSpot.gameObject.SetActive(false);
-        
-        _passengers.NewPassenger();
         _hasPassenger = false;
+        _passengers.NewPassenger();
     }
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        var speed = _ballRigidbody.velocity.magnitude / _maxMagnitudeVelocity;
-        sensor.AddObservation(speed);
         sensor.AddObservation(_hasPassenger);
     }
 
-    public override void Heuristic(float[] actionsOut)
+    public override void Heuristic(in ActionBuffers actionsOut)
     {
-        actionsOut[0] = 0;
+        var discreteActionsOut = actionsOut.DiscreteActions;
+        discreteActionsOut[0] = 0;
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            actionsOut[0] = 1;
+            discreteActionsOut[0] = 1;
         }
         else if(Input.GetKey(KeyCode.RightArrow))
         {
-            actionsOut[0] = 2;
+            discreteActionsOut[0] = 2;
         }
-        
-        actionsOut[1] = 0;
-        if (Input.GetKey(KeyCode.UpArrow))
+        else if (Input.GetKey(KeyCode.UpArrow))
         {
-            actionsOut[1] = 1;
+            discreteActionsOut[0] = 3;
         }
-        
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            discreteActionsOut[0] = 4;
+        }
     }
 
-    public override void OnActionReceived(float[] actionBuffers)
+    public override void OnActionReceived(ActionBuffers actionBuffers)
     {
-        var turning = actionBuffers[0]; // [0,1,2]
-        switch (turning)
+        var move = actionBuffers.DiscreteActions[0]; // [0,1,2,3,4]
+        _moveInput = 0;
+        _turningInput = 0;
+        switch (move)
         {
             case 0:
-                _turningInput = 0;
+                _moveInput = 0;
                 break;
             case 1:
                 _turningInput = -1;
@@ -117,13 +96,32 @@ public class TaxiAgent : Agent
             case 2:
                 _turningInput = 1;
                 break;
+            case 3:
+                _moveInput = 1;
+                break;
+            case 4:
+                _moveInput = -1;
+                break;
         }
 
-        _moveInput = actionBuffers[1]; // [0,1]
+        AddReward(_penalty / MaxStep);
 
-        var speed = _ballRigidbody.velocity.magnitude / _maxMagnitudeVelocity;
-        AddReward(speed * _speedReward);
-        AddReward(_penaltyPerTick);
+        Move();
+    }
+    
+    private void Move()
+    {
+        transform.Rotate(transform.up, _turningSpeed * _turningInput * Time.deltaTime);
+        transform.localPosition = _ballRigidbody.transform.localPosition;
+        
+        var magnitude = _ballRigidbody.velocity.magnitude;
+        var newVelocity = transform.forward * magnitude;
+        _ballRigidbody.velocity = newVelocity;
+
+        if (_ballRigidbody.velocity.sqrMagnitude < _maxMagnitudeVelocity)
+        {
+            _ballRigidbody.AddForce(transform.forward * _moveInput * _acceleration, ForceMode.VelocityChange);
+        }
     }
 
     public void OnCollisionEnter(Collision other)
@@ -133,25 +131,23 @@ public class TaxiAgent : Agent
 
     public void OnCollision(GameObject other)
     {
-        if (other.gameObject.CompareTag("Wall"))
-        {
-            AddReward(-1f);
-            EndEpisode();
-            return;
-        }
-        
         if (other.gameObject.CompareTag("Checkpoint"))
         {
-            AddReward(0.2f);
+            var statsRecorder = Academy.Instance.StatsRecorder;
+            statsRecorder.Add("Passengers picked up", 1, StatAggregationMethod.Sum);
             other.gameObject.SetActive(false);
-            _returnSpot.gameObject.SetActive(true);
             _hasPassenger = true;
         }
     }
 
     public void GoalHit()
     {
-        AddReward(1f);
-        EndEpisode();
+        if (_hasPassenger)
+        {
+            var statsRecorder = Academy.Instance.StatsRecorder;
+            statsRecorder.Add("Passengers returned", 1, StatAggregationMethod.Sum);
+            SetReward(2f);
+            EndEpisode();
+        }
     }
 }
